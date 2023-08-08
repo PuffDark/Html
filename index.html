@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Control de PC</title>
+    <link rel="stylesheet" href="Style.css" />
+</head>
+<body onload="startTimer()">
+
+  <div class="computer-section">
+    <h2>Computadora 1</h2>
+    <label for="limite-1">Límite de tiempo (minutos):</label>
+    <input type="number" id="limite-1" value="5"><br>
+    <button onclick="toggleComputer(1)">Encendido</button>
+    <span id="computer-1-status">Encendido</span>
+    <div class="timer"></div>
+  </div>
+  
+  <!-- Sección de la computadora 2 -->
+  <div class="computer-section">
+    <h2>Computadora 2</h2>
+    <label for="limite-2">Límite de tiempo (minutos):</label>
+    <input type="number" id="limite-2" value="5"><br>
+    <button onclick="toggleComputer(2)">Encendido</button>
+    <span id="computer-2-status">Encendido</span>
+    <div class="timer"></div>
+  </div>
+  
+  <!-- Sección de la computadora 3 -->
+  <div class="computer-section">
+    <h2>Computadora 3</h2>
+    <label for="limite-3">Límite de tiempo (minutos):</label>
+    <input type="number" id="limite-3" value="5"><br>
+    <button onclick="toggleComputer(3)">Encendido</button>
+    <span id="computer-3-status">Encendido</span>
+    <div class="timer"></div>
+  </div>
+  
+  <!-- Sección de la computadora 4 -->
+  <div class="computer-section">
+    <h2>Computadora 4</h2>
+    <label for="limite-4">Límite de tiempo (minutos):</label>
+    <input type="number" id="limite-4" value="5"><br>
+    <button onclick="toggleComputer(4)">Encendido</button>
+    <span id="computer-4-status">Encendido</span>
+    <div class="timer"></div>
+  </div>
+
+           
+
+<!-- Encabezado de la tabla -->
+<h1>Tabla de registro diario</h1>
+<form>
+      <label for="name_user">Ingrese su Nombre:</label>
+      <input type="text" placeholder="Escribe tu Nombre" name="nombre" id="name_user">
+      <br>
+      <label for="lastname_user">Ingrese su Apellido:</label>
+      <input type="text" placeholder="Escribe tu Apellido" name="apellido" id="lastname_user">
+      <br>
+      <label for="cedula_user">Ingrese su Cedula:</label>
+      <input type="text" placeholder="Escribe tu Cedula" name="cedula" id="cedula_user">
+      <br>
+      <label for="tlf_number">Ingrese su numero telefonico:</label>
+      <input type="text" placeholder="Ej: 0412-5555555" name="telefono" id="tlf_number">
+      <br>
+      <label for="email">Ingrese correo electronico:</label>
+      <input type="email" placeholder="Ej: Support@gmail.com" name="email" id="email">
+      <br>
+      <label for="hora">Hora</label>
+      <input type="time" name="hora" id="hora" readonly>
+      <br>
+      <label for="fecha">Fecha</label>
+      <input type="date" name="fecha" id="fecha" readonly>
+      <br>
+      <label for="observaciones">Observaciones</label>
+      <input type="text" name="observacion" id="observaciones">
+      <br>
+      <button type="submit">Registrar</button>
+      <button type="reset">Limpiar</button>
+</form>
+<footer>
+  <p>Biblioteca Virtual de Aragua - 2023</p>
+</footer>
+    <script src="scripts.js"></script> 
+</body>
+</html>
