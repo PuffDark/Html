@@ -157,4 +157,4 @@ if (minutos < 10) {
 
 // Establecer los valores de los campos de entrada
 document.getElementById('fecha').value = `${anio}-${mes}-${dia}`;
-document.getElementById('hora').value = `${horas}:${minutos}`;
+
